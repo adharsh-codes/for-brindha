@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For Brindha ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating hearts -->
+<div id="hearts"></div>
+
+<!-- Background music -->
+<audio id="bgMusic" src="love.mp3" loop></audio>
+
+<!-- Screen 1 -->
+<div class="screen active" id="screen1">
+  <h1>Something special awaits you papu 💖</h1>
+  <button onclick="goToVideo()">Click to Begin</button>
+</div>
+
+<!-- Screen 2 -->
+<div class="screen" id="screen2">
+  <video id="myVideo" controls>
+    <source src="myvideo.mp4" type="video/mp4">
+  </video>
+
+  <!-- GAP is handled via CSS -->
+  <button class="nextBtn" onclick="goToText()">My Heartful Words 💌</button>
+</div>
+
+<!-- Screen 3 -->
+<div class="screen" id="screen3">
+  <div class="loveText" id="loveText"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
